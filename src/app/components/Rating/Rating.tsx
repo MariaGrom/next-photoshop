@@ -70,6 +70,8 @@ const handleSpace = (i:number, e:KeyboardEvent<SVGElement>) => {
       {ratingArray.map((r, i) => (
         <span key={i}>{r}</span>
       ))}
+
+      
     </div>
   );
 };
