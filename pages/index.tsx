@@ -1,5 +1,4 @@
 import { GetStaticProps } from "next";
-// "use client";
 import React, { useState } from "react";
 import { Button, HTag, Paragraph, Tag, Rating } from "../src/app/components";
 import { withLayout } from "../layout/Layout";
@@ -21,26 +20,13 @@ function Home({menu}:HomeProps): JSX.Element {
       <Paragraph size="s">Мелкий параграф</Paragraph>
       <Paragraph>Средний параграф</Paragraph>
       <Paragraph size="l">Крупный параграф</Paragraph>
-      <Tag size="s" color="ghost">
-        {" "}
-        ghost
-      </Tag>
-      <Tag size="s" color="red">
-        red
-      </Tag>
-      <Tag size="s" color="grey">
-        grey
-      </Tag>
-      <Tag size="s" color="green">
-        green
-      </Tag>
-      <Tag size="m" color="primary">
-        primary
-      </Tag>
+      <Tag size="s" color="ghost">ghost</Tag>
+      <Tag size="s" color="red"> red</Tag>
+      <Tag size="s" color="grey"> grey</Tag>
+      <Tag size="s" color="green">green</Tag>
+      <Tag size="m" color="primary"> primary</Tag>
       <Rating rating={rating} isEditable setRating={setRating} />
-      <ul>
-        {menu.map(m => (<li key = {m._id.secondCategory}>{m._id.secondCategory}</li>))}
-      </ul>
+
     </>
   );
 }
