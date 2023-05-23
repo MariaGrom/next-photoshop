@@ -28,7 +28,7 @@ function Home({menu}:HomeProps): JSX.Element {
       <Rating rating={rating} isEditable setRating={setRating} />
 
     </>
-  );
+  ); 
 }
 
 export default withLayout(Home);

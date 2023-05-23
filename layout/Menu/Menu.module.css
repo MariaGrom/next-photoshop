@@ -37,8 +37,12 @@ margin-top: 20px;
   border-left: 1px solid #DFDFDF;
 }
 
+.secondLevelBlock{
+display: none;
+}
+
 .secondLevelBlockOpened:last-child{
-margin-bottom: 20px;
+  display: block;
 }
 
 .thirdLevel {
