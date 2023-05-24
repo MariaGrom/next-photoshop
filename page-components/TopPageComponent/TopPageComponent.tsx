@@ -6,6 +6,7 @@ import {
   HTag,
   HhData,
   Paragraph,
+  Product,
   Sort,
   Tag,
 } from "@/app/components";
@@ -43,7 +44,7 @@ export const TopPageComponen = ({
       </div>
       <div>
         {sortedProducts &&
-          sortedProducts.map((p) => <div key={p._id}>{p.title}</div>)}
+          sortedProducts.map((p) => <Product key={p._id} product={p}/>)}
       </div>
       <div className={styles.hhtitle}>
         <HTag tag="h2">Вакансии -{page.category}</HTag>
