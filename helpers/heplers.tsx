@@ -31,3 +31,7 @@ export const firstLevelMenu: FirstLevelMenuItem[] = [
     id: TopLevelCategory.Products,
   },
 ];
+
+
+// Regex для отделения пробелов в цене зарплат
+export const priceRu = (price:number):string => price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ').concat(' ₽');
